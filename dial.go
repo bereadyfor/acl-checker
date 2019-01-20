@@ -7,8 +7,6 @@ import (
 	"os"
 
 	yaml "gopkg.in/yaml.v2"
-
-	ping "github.com/sparrc/go-ping"
 )
 
 type Config struct {
@@ -54,15 +52,6 @@ func checkPort(protocol string, ip string, port string) (bool, error) {
 }
 
 func checkPing() {
-	pinger, err := ping.NewPinger("10.64.53.130")
-	if err != nil {
-		log.Println(err)
-	} else {
-		log.Println("success")
-	}
-
-	pinger.Count = 1
-	pinger.Run()
 }
 
 func checkDNSLookup() {
