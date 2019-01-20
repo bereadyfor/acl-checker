@@ -1,0 +1,12 @@
+tasks:
+    - type: host
+      dst: localhost
+      port: 80
+      notify: enable
+    - type: ip
+      dst: 127.0.0.1
+      port: 80
+    - type: dns
+      dst: github.io
+      port: 22
+      notify: enable
