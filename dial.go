@@ -52,12 +52,13 @@ func checkPort(protocol string, ip string, port string) (bool, error) {
 }
 
 func checkPing() {
+	/* TODO implement */
 }
 
 func checkDNSLookup() {
-
+	/* TODO implement */
 }
 
 func notify() {
-
+	/* TODO implement */
 }
